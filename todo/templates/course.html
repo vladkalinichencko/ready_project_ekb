@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Log-in{% endblock %}
+{% block content %}
+
+    <p class="courseName">Дискретная математика для программистов</p>
+
+    <p class="part1">Блок 1</p>
+
+    <div class="lesson1">
+        <div class="lessonName"><p class="lessonNameText"></p></div>
+        <div class="testCount"><p class="testCountText"></p></div>
+        <div class="rating"><img src="templates/imgs/star.svg" alt=""><img src="templates/imgs/star.svg" alt=""><img src="templates/imgs/star.svg" alt=""></div>
+        <div class="completed"><img src="templates/imgs/tick.svg" alt=""></div>
+    </div>
+
+    <div class="lesson2">
+        <div class="lessonName"><p class="lessonNameText"></p></div>
+        <div class="testCount"><p class="testCountText"></p></div>
+        <div class="rating"><img src="templates/imgs/star.svg" alt=""></div>
+        <div class="completed"><img src="templates/imgs/cross.svg" alt=""></div>
+    </div>
+
+    <p class="1row">Пройдено тестов:</p>
+    <p class="2row">Осталось времени:</p>
+    <p class="3row">Средний балл:</p>
+
+    <p class="4row">20/200</p>
+    <p class="5row">360 ч</p>
+    <p class="6row">4.67</p>
+
+    <input type="button" class="continueButton" value="Продолжить">
+
+{% endblock %}

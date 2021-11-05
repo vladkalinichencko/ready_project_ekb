@@ -1,15 +1,17 @@
 from django.db import models
+from django.conf import settings
 
 
-class Todo(models.Model):
-    number = models.IntegerField(null=False, blank=False)
-    is_done = models.BooleanField(
-        null=False,
-        blank=False,
-        default=False
-    )
-    text = models.CharField(
-        null=False,
-        blank=False,
-        max_length=256
-    )
+class Courses(models.Model):
+    name = models.TextField(null=False, blank=False)
+    description = models.TextField(null=False, blank=False)
+    duration = models.DateTimeField(null=False, blank=False)
+    author = models.TextField(null=False, blank=False)
+
+
+class Article(models.Model):
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE)
+    is_author = models.BooleanField(null=False, blank=False, default=False)
+

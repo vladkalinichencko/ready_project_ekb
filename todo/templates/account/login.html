@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Log-in{% endblock %}
+{% block content %}
+
+    <p class="AccountWelcome">Добро пожаловать в JedLine</p>
+
+    <div class="closedSignUpForm" tabindex="1"></div>
+
+    <p class="gray" tabindex="3">Зарегистрируйтесь, если нет аккаунта</p>
+    <p class="gray0" tabindex="4">уже есть аккаунт, войти</p>
+
+    <p class="enter">Войти</p>
+    <p class="register">Зарегистрироваться</p>
+
+    <div class="extendedLogInForm" tabindex="2"></div>
+
+    <form action="." method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+
+        <p><input type="submit" value="Войти" class="enterButton"></p>
+        <p><input type="submit" value="Зарегистрироваться" class="registerButton"></p>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,196 @@
+body {
+    height: 1000px;
+}
+
+.AccountWelcome {
+    position: absolute;
+    width: 996px;
+    height: 56px;
+    left: 460px;
+    top: 180px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.mailField {
+    position: absolute;
+    width: 599px;
+    height: 38px;
+    left: 660px;
+    top: 519px;
+
+    border: none;
+    border-bottom: 3px solid black;
+    placeholder-text: "Твоя электропочта";
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #424242;
+}
+
+.mailField::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #424242;
+}
+
+.passwordField {
+    position: absolute;
+    width: 599px;
+    height: 38px;
+    left: 660px;
+    top: 606px;
+
+    border: none;
+    border-bottom: 3px solid black;
+    placeholder-text: "Твоя электропочта";
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #424242;
+}
+
+.passwordField::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #424242;
+}
+
+.closedSignUpForm {
+    position: absolute;
+    width: 658px;
+    height: 64px;
+    left: 631px;
+    top: 375px;
+
+    background: #FFFFFF;
+    border: 3px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.closedSignUpForm:focus {
+    position: absolute;
+    width: 658px;
+    height: 368px;
+    left: 631px;
+    top: 344px;
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 0;
+}
+
+.closedSignUpForm:focus > .extendedLogInForm {
+    position: absolute;
+    width: 658px;
+    height: 64px;
+    left: 631px;
+    top: 729px;
+
+    background: #FFFFFF;
+    border: 3px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.gray {
+    position: absolute;
+    width: 580px;
+    height: 34px;
+    left: 668px;
+    top: 359px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #999999;
+}
+
+.gray:focus > .closedSignUpForm {
+    position: absolute;
+    width: 658px;
+    height: 368px;
+    left: 631px;
+    top: 344px;
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 0;
+}
+
+.extendedLogInForm {
+    position: absolute;
+    width: 658px;
+    height: 276px;
+    left: 631px;
+    top: 455px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.enter {
+    position: absolute;
+    width: 119px;
+    height: 47px;
+    left: 657px;
+    top: 441px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.enterButton {
+    position: absolute;
+    width: 450px;
+    height: 97px;
+    left: 735px;
+    top: 870px;
+
+    background: #0065DC;
+    box-shadow: inset 0px 0px 16px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 40px;
+    border-width: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
