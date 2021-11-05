@@ -25,6 +25,19 @@ def user_login(request):
     return render(request, 'account/login.html', {'form': form})
 
 
+def go_home(request):
+    return render(request, 'mainPage.html')
+
+def go_course(request):
+    return render(request, 'course.html')
+
+def go_overview(request):
+    return render(request, 'courseOverview.html')
+
+def go_lesson(request):
+    return render(request, 'coursePage.html')
+
+
 def get_tasks(request):
     courses_list = Courses.objects.all()
     article_list = Article.objects.all()

@@ -2,6 +2,53 @@ body {
     height: 1000px;
 }
 
+.header {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    height: 100px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+    position: absolute;
+    left: 78.12%;
+    right: 5.36%;
+    top: -5%;
+    bottom: 22%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: right;
+
+    color: #000000;
+}
+
+.avatar {
+    position: absolute;
+    left: 95.42%;
+    right: 1.67%;
+    top: 22%;
+    bottom: 22%;
+
+    background: #E0E0E0;
+    border-radius: 19px;
+}
+
+.logo {
+    position: absolute;
+    left: 2.24%;
+    right: 84.48%;
+    top: 5%;
+    bottom: 5%;
+}
+
 .AccountWelcome {
     position: absolute;
     width: 996px;
@@ -133,6 +180,38 @@ body {
     color: #999999;
 }
 
+.gray0 {
+    position: absolute;
+    width: 580.27px;
+    height: 34px;
+    left: 668px;
+    top: 744px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #999999;
+}
+
+.register {
+    position: absolute;
+    width: 324px;
+    height: 47px;
+    left: 657px;
+    top: 363px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
 .gray:focus > .closedSignUpForm {
     position: absolute;
     width: 658px;
@@ -140,9 +219,9 @@ body {
     left: 631px;
     top: 344px;
 
+    background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    border: 0;
 }
 
 .extendedLogInForm {
@@ -193,4 +272,734 @@ body {
     text-align: center;
 
     color: #FFFFFF;
+}
+
+.registerButton {
+    position: absolute;
+    width: 658px;
+    height: 97px;
+    left: 631px;
+    top: 870px;
+
+    background: #0065DC;
+    box-shadow: inset 0px 0px 16px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 40px;
+    border-width: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.greeting {
+    position: absolute;
+    width: 1760px;
+    height: 61px;
+    left: 80px;
+    top: 158px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #000000;
+}
+
+.recommendationTitle {
+    position: absolute;
+    height: 78px;
+    left: 80px;
+    top: 280px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.leftNav {
+    position: absolute;
+    width: 107px;
+    height: 347.75px;
+    left: 0px;
+    top: 364px;
+
+    background: #FFFFFF;
+    filter: blur(15px);
+}
+
+.leftNav img {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 37.69%;
+    bottom: 37.76%;
+}
+
+.rightNav {
+    position: absolute;
+    width: 107px;
+    height: 347.75px;
+    left: 1920px;
+    top: 393px;
+
+    background: #FFFFFF;
+    filter: blur(15px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.rightNav img {
+    position: absolute;
+    width: 53.5px;
+    height: 85.37px;
+    left: 80.25px;
+    top: 131.08px;
+
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.coursePreview {
+    position: absolute;
+    width: 369.09px;
+    height: 290px;
+    left: 136px;
+    top: 393px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.imgContainer {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 36.36%;
+
+    background: #9944EE;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.courseTitle {
+    position: absolute;
+    left: 3.57%;
+    right: 3.57%;
+    bottom: 4.55%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.courseName {
+    position: absolute;
+    width: 1021px;
+    height: 122px;
+    left: 80px;
+    top: 202px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #000000;
+}
+
+.part1 {
+    position: absolute;
+    width: 1010px;
+    height: 53px;
+    left: 86px;
+    top: 346px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.lesson1 {
+    position: absolute;
+    width: 1063px;
+    height: 79px;
+    left: 110px;
+    top: 395px;
+}
+
+.lessonName {
+    position: absolute;
+    left: 0%;
+    right: 47.98%;
+    top: 1.27%;
+    bottom: 0%;
+
+    background: #E0E0E0;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.lessonNameText {
+    position: absolute;
+    left: 2.03%;
+    right: 30.23%;
+    top: 26.58%;
+    bottom: 29.11%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.testCount {
+    position: absolute;
+    left: 52.49%;
+    right: 27.85%;
+    top: 1.27%;
+    bottom: 0%;
+
+    background: #E0E0E0;
+}
+
+.testCountText {
+    position: absolute;
+    left: 2.03%;
+    right: 30.23%;
+    top: 26.58%;
+    bottom: 29.11%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.rating {
+    position: absolute;
+    left: 72.62%;
+    right: 9.22%;
+    top: 0%;
+    bottom: 1.27%;
+
+    background: #E0E0E0;
+    border-radius: 0px;
+}
+
+.completed {
+    position: absolute;
+    left: 91.25%;
+    right: 0%;
+    top: 0%;
+    bottom: 1.27%;
+
+    background: #E0E0E0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.lesson2 {
+    position: absolute;
+    width: 929px;
+    height: 79px;
+    left: 110px;
+    top: 489px;
+}
+
+.lessonName2 {
+    position: absolute;
+    left: 0%;
+    right: 55.33%;
+    top: 1.27%;
+    bottom: 0%;
+
+    background: #E0E0E0;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.lessonNameText2 {
+    position: absolute;
+    left: 2.33%;
+    right: 35.35%;
+    top: 26.58%;
+    bottom: 29.11%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.testCount2 {
+    position: absolute;
+    left: 45.21%;
+    right: 32.29%;
+    top: 1.27%;
+    bottom: 0%;
+
+    background: #E0E0E0;
+}
+
+.testCountText2 {
+    position: absolute;
+    left: 2.33%;
+    right: 35.35%;
+    top: 26.58%;
+    bottom: 29.11%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.rating2 {
+    position: absolute;
+    left: 68.25%;
+    right: 10.55%;
+    top: 1.27%;
+    bottom: 0%;
+
+    background: #E0E0E0;
+    border-radius: 0px;
+}
+
+.completed2 {
+    position: absolute;
+    left: 89.99%;
+    right: 0%;
+    top: 0%;
+    bottom: 1.27%;
+
+    background: #E0E0E0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.row1 {
+    position: absolute;
+    width: 531px;
+    height: 647px;
+    left: 1291px;
+    top: 202px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 170%;
+
+    color: #000000;
+}
+
+.row2 {
+    position: absolute;
+    width: 531px;
+    height: 647px;
+    left: 1291px;
+    top: 202px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 170%;
+
+    text-align: right;
+
+    color: #000000;
+}
+
+.continueHref {
+    position: absolute;
+    width: 396px;
+    height: 116px;
+    left: 1444px;
+    top: 886px;
+}
+
+.continueButton {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #0065DC;
+    box-shadow: inset 0px 0px 16px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 40px;
+}
+
+.continueButtonText {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 29.31%;
+    bottom: 30.17%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.descriptionTitle {
+    position: absolute;
+    width: 1021px;
+    height: 54px;
+    left: 80px;
+    top: 366px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.description {
+    position: absolute;
+    width: 1005px;
+    height: 110px;
+    left: 86px;
+    top: 426px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.descriptionTitle2 {
+    position: absolute;
+    width: 1021px;
+    height: 54px;
+    left: 80px;
+    top: 540px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.description2 {
+    position: absolute;
+    width: 1021px;
+    height: 329px;
+    left: 80px;
+    top: 604px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.video {
+    position: absolute;
+    width: 670px;
+    height: 371px;
+    left: 1170px;
+    top: 202px;
+
+    background: #FBFF4D;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.row12 {
+    position: absolute;
+    width: 562px;
+    height: 245px;
+    left: 1261px;
+    top: 604px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 170%;
+
+    color: #000000;
+}
+
+.row22 {
+    position: absolute;
+    width: 562px;
+    height: 245px;
+    left: 1261px;
+    top: 604px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 170%;
+
+    text-align: right;
+
+    color: #000000;
+}
+
+.backArrow {
+    position: absolute;
+    width: 20.68px;
+    height: 33px;
+    left: 89px;
+    top: 209px;
+}
+
+.lessonNamePage {
+    position: absolute;
+    width: 981px;
+    height: 71px;
+    left: 120px;
+    top: 202px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.questionText {
+    position: absolute;
+    width: 682px;
+    height: 71px;
+    left: 1141px;
+    top: 202px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.question1 {
+    position: absolute;
+    width: 682px;
+    height: 47px;
+    left: 1141px;
+    top: 273px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.variant11 {
+    position: absolute;
+    width: 664px;
+    height: 150px;
+    left: 1159px;
+    top: 347px;
+
+    background: rgba(0, 71, 255, 0.06);
+    border: 9px solid #0065DC;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.variant11Text {
+        position: absolute;
+    width: 596px;
+    height: 106px;
+    left: 1193px;
+    top: 370px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.variant21 {
+    position: absolute;
+    width: 664px;
+    height: 150px;
+    left: 1159px;
+    top: 516px;
+
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.variant21Text {
+    position: absolute;
+    width: 596px;
+    height: 106px;
+    left: 1193px;
+    top: 539px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+.extendedVideo {
+    position: absolute;
+    width: 1021px;
+    height: 565px;
+    left: 80px;
+    top: 273px;
+
+    background: #654DFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.closedConspect {
+    position: absolute;
+    width: 1025px;
+    height: 67px;
+    left: 76px;
+    top: 863px;
+
+    background: #FFFFFF;
+    border: 3px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.conspectText {
+    position: absolute;
+    width: 969.2px;
+    height: 593px;
+    left: 105.9px;
+    top: 381px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #050505;
+}
+
+.gray2 {
+    position: absolute;
+    width: 271px;
+    height: 36px;
+    left: 102px;
+    top: 880px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #999999;
+}
+
+.gray3 {
+    position: absolute;
+    width: 378px;
+    height: 36px;
+    left: 106px;
+    top: 288px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #999999;
+}
+
+.goButton {
+    position: absolute;
+    width: 157px;
+    height: 116px;
+    left: 1683px;
+    top: 886px;
+}
+
+.goButtonPlane {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #0065DC;
+    box-shadow: inset 0px 0px 16px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 40px;
+}
+
+.ButtonArrow {
+    position: absolute;
+    left: 25.48%;
+    right: 23.57%;
+    top: 50%;
+    bottom: 50%;
+
+    background: #C4C4C4;
+    border: 9px solid #FFFFFF;
 }

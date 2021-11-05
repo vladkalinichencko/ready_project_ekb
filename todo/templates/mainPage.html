@@ -1,15 +1,14 @@
 {% extends "base.html" %}
 {% block title %}Log-in{% endblock %}
 {% block content %}
+{% load static %}
 
     <p class="greeting">Здравствуй, Дамир!</p>
-
-    <p class="descriptionTitle">Описание</p>
 
     <p class="recommendationTitle">Курсы, рекомендованные тебе</p>
 
     <div class="leftNav">
-        <img src="templates/imgs/leftArrow.svg" alt="">
+        <img src="{% static '/imgs/leftArrow.svg' %}" alt="">
     </div>
 
     <div class="coursePreview">

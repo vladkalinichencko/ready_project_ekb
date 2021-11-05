@@ -2,9 +2,9 @@
 {% block title %}Log-in{% endblock %}
 {% block content %}
 
-    <a href="templates/course.html"><img src="static/imgs/backArrow.svg" alt=""></a>
+    <a href="templates/course.html" class="backArrow"><img src="static/imgs/backArrow.svg" alt=""></a>
 
-    <p class="lessonName">Урок 2</p>
+    <p class="lessonNamePage">Урок 2</p>
 
     <p class="questionText">Вопросы</p>
 
@@ -26,7 +26,10 @@
     <p class="gray2" tabindex="3">Показать конспект</p>
     <p class="gray3" tabindex="4">Показать видео</p>
 
-    <input type="button" class="goButton" value="">
     <img src="templates/imgs/nextArrow.svg" alt="">
+
+    <a href="{% url 'lesson' %}" class="goButton">
+        <div class="goButtonPlane"><img class="ButtonArrow" src="static/imgs/nextArrow.svg" alt=""></div>
+    </a>
 
 {% endblock %}
