@@ -1,7 +1,7 @@
 from .models import Courses, Article
 from django.http import JsonResponse
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm
 
@@ -15,14 +15,14 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return HttpResponse('Authenticated successfully')
+                    return redirect('http://127.0.0.1:8000/home/')
                 else:
-                    return HttpResponse('Disabled account')
+                    return redirect('http://127.0.0.1:8000/login/')
             else:
-                return HttpResponse('Invalid login')
+                return redirect('http://127.0.0.1:8000/login/')
     else:
         form = LoginForm()
-    return render(request, 'account/login.html', {'form': form})
+        return render(request, 'account/login.html', {'form': form})
 
 
 def go_home(request):

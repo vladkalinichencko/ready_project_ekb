@@ -1,30 +1,35 @@
 {% extends "base.html" %}
-{% block title %}Log-in{% endblock %}
+{% block title %}Математика, 3 класс{% endblock %}
 {% block content %}
+{% load static %}
+<div class="header">
+    <a href="http://127.0.0.1:8000/home"><img src="{% static 'imgs/logotype.png' %}" alt="" class="logo"></a>
+    <p class="name">Дамир</p>
+    <img class="avatar" src="{% static 'imgs/pic.jpeg' %}" alt="">
+</div>
+    <a href="{% url 'home' %}" class="backArrow"><img src="{% static 'imgs/backArrow.svg' %}" alt=""></a>
 
-    <a href="templates/course.html"><img src="static/imgs/backArrow.svg" alt=""></a>
-
-    <p class="courseName">Дискретная математика для программистов</p>
+    <p class="courseName">Математика, 3 класс</p>
 
     <p class="descriptionTitle">Описание</p>
-    <p class="description">Этот курс представляет из себя ебейший lorem ipsum, который ты никогда не поймёшь</p>
+    <p class="description">Этот курс представляет из себя начала арифметики для детей с нарушениями центральной нервной системы. В курсе изучаются основные темы, проходимые первоклассниками</p>
 
     <p class="descriptionTitle2">План</p>
     <p class="description2">Блок 1 <br>
-            &nbsp;&nbsp;&nbsp;&nbsp; урок 1 <br>
-            &nbsp;&nbsp;&nbsp;&nbsp; урок 2 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Умножение чисел <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Деление чисел<br>
         Блок 2 <br>
-            &nbsp;&nbsp;&nbsp;&nbsp; урок 1 <br>
-            &nbsp;&nbsp;&nbsp;&nbsp; урок 2 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Умножение чисел в столбик <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Деление чисел в столбик <br>
     </p>
 
     <div class="video">
-        <!--вставить видео-->
+        <iframe class="youtubeLesson" src="https://www.youtube.com/embed/aY-iDW0Lggs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <p class="row12">Продолжительность: <br> Сложность: <br> Проверка: </p>
 
-    <p class="row22">365 ч<br> высокая <br> тесты </p>
+    <p class="row22">25 ч<br> средняя <br> тесты </p>
 
     <a href="{% url 'course' %}" class="continueHref">
         <div class="continueButton"><p class="continueButtonText">Поступить</p></div>

@@ -3,11 +3,12 @@ body {
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     left: 0%;
     right: 0%;
     top: 0%;
     height: 100px;
+    z-index: 2;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
@@ -36,6 +37,8 @@ body {
     right: 1.67%;
     top: 22%;
     bottom: 22%;
+    width: 56px;
+    height: 56px;
 
     background: #E0E0E0;
     border-radius: 19px;
@@ -47,6 +50,8 @@ body {
     right: 84.48%;
     top: 5%;
     bottom: 5%;
+    z-index: 1;
+    height: 100%;
 }
 
 .AccountWelcome {
@@ -139,31 +144,6 @@ body {
     border-radius: 20px;
 }
 
-.closedSignUpForm:focus {
-    position: absolute;
-    width: 658px;
-    height: 368px;
-    left: 631px;
-    top: 344px;
-
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    border: 0;
-}
-
-.closedSignUpForm:focus > .extendedLogInForm {
-    position: absolute;
-    width: 658px;
-    height: 64px;
-    left: 631px;
-    top: 729px;
-
-    background: #FFFFFF;
-    border: 3px solid #999999;
-    box-sizing: border-box;
-    border-radius: 20px;
-}
-
 .gray {
     position: absolute;
     width: 580px;
@@ -212,24 +192,12 @@ body {
     color: #000000;
 }
 
-.gray:focus > .closedSignUpForm {
-    position: absolute;
-    width: 658px;
-    height: 368px;
-    left: 631px;
-    top: 344px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-}
-
 .extendedLogInForm {
     position: absolute;
     width: 658px;
     height: 276px;
     left: 631px;
-    top: 455px;
+    top: 435px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
@@ -241,7 +209,8 @@ body {
     width: 119px;
     height: 47px;
     left: 657px;
-    top: 441px;
+    top: 420px;
+    z-index: 1;
 
     font-family: Roboto;
     font-style: normal;
@@ -272,6 +241,10 @@ body {
     text-align: center;
 
     color: #FFFFFF;
+}
+
+.enterButton:hover {
+    cursor: pointer;
 }
 
 .registerButton {
@@ -372,12 +345,18 @@ body {
     position: absolute;
     width: 369.09px;
     height: 290px;
-    left: 136px;
     top: 393px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
+
+    margin-left: 136px;
+    transition: all 0.2s ease-in 0s;
+}
+
+.coursePreview:hover {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
 }
 
 .imgContainer {
@@ -386,8 +365,9 @@ body {
     right: 0%;
     top: 0%;
     bottom: 36.36%;
+    width: 100%;
+    height: 65%;
 
-    background: #9944EE;
     border-radius: 40px 40px 0px 0px;
 }
 
@@ -395,7 +375,7 @@ body {
     position: absolute;
     left: 3.57%;
     right: 3.57%;
-    bottom: 4.55%;
+    top: 60%;
 
     font-family: Roboto;
     font-style: normal;
@@ -443,13 +423,13 @@ body {
     width: 1063px;
     height: 79px;
     left: 110px;
-    top: 395px;
+    top: 445px;
 }
 
 .lessonName {
     position: absolute;
     left: 0%;
-    right: 47.98%;
+    right: 72%;
     top: 1.27%;
     bottom: 0%;
 
@@ -459,10 +439,8 @@ body {
 
 .lessonNameText {
     position: absolute;
-    left: 2.03%;
-    right: 30.23%;
-    top: 26.58%;
-    bottom: 29.11%;
+    left: 4%;
+    top: -10%;
 
     font-family: Roboto;
     font-style: normal;
@@ -475,8 +453,8 @@ body {
 
 .testCount {
     position: absolute;
-    left: 52.49%;
-    right: 27.85%;
+    left: 28.5%;
+    right: 58%;
     top: 1.27%;
     bottom: 0%;
 
@@ -485,10 +463,8 @@ body {
 
 .testCountText {
     position: absolute;
-    left: 2.03%;
-    right: 30.23%;
-    top: 26.58%;
-    bottom: 29.11%;
+    left: 30%;
+    top: -10%;
 
     font-family: Roboto;
     font-style: normal;
@@ -501,8 +477,8 @@ body {
 
 .rating {
     position: absolute;
-    left: 72.62%;
-    right: 9.22%;
+    left: 42.5%;
+    right: 37%;
     top: 0%;
     bottom: 1.27%;
 
@@ -512,8 +488,8 @@ body {
 
 .completed {
     position: absolute;
-    left: 91.25%;
-    right: 0%;
+    left: 63.5%;
+    right: 28%;
     top: 0%;
     bottom: 1.27%;
 
@@ -526,13 +502,13 @@ body {
     width: 929px;
     height: 79px;
     left: 110px;
-    top: 489px;
+    top: 539px;
 }
 
 .lessonName2 {
     position: absolute;
     left: 0%;
-    right: 55.33%;
+    right: 48.33%;
     top: 1.27%;
     bottom: 0%;
 
@@ -542,10 +518,8 @@ body {
 
 .lessonNameText2 {
     position: absolute;
-    left: 2.33%;
-    right: 35.35%;
-    top: 26.58%;
-    bottom: 29.11%;
+    left: 4%;
+    top: -10%;
 
     font-family: Roboto;
     font-style: normal;
@@ -558,7 +532,7 @@ body {
 
 .testCount2 {
     position: absolute;
-    left: 45.21%;
+    left: 52.21%;
     right: 32.29%;
     top: 1.27%;
     bottom: 0%;
@@ -568,10 +542,8 @@ body {
 
 .testCountText2 {
     position: absolute;
-    left: 2.33%;
-    right: 35.35%;
-    top: 26.58%;
-    bottom: 29.11%;
+    left: 35%;
+    top: -10%;
 
     font-family: Roboto;
     font-style: normal;
@@ -662,8 +634,7 @@ body {
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 29.31%;
-    bottom: 30.17%;
+    bottom: -5%;
 
     font-family: Roboto;
     font-style: normal;
@@ -747,7 +718,7 @@ body {
     left: 1170px;
     top: 202px;
 
-    background: #FBFF4D;
+    background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
@@ -790,8 +761,8 @@ body {
     position: absolute;
     width: 20.68px;
     height: 33px;
-    left: 89px;
-    top: 209px;
+    left: 45px;
+    top: 265px;
 }
 
 .lessonNamePage {
@@ -847,7 +818,22 @@ body {
     width: 664px;
     height: 150px;
     left: 1159px;
-    top: 347px;
+    top: 380px;
+
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    transition: all 0.2s ease-in 0s;
+}
+
+.variant11:focus {
+    position: absolute;
+    width: 664px;
+    height: 150px;
+    left: 1159px;
+    top: 380px;
 
     background: rgba(0, 71, 255, 0.06);
     border: 9px solid #0065DC;
@@ -855,12 +841,17 @@ body {
     border-radius: 25px;
 }
 
+.variant11:hover {
+    cursor: pointer;
+}
+
 .variant11Text {
-        position: absolute;
+    position: absolute;
     width: 596px;
     height: 106px;
     left: 1193px;
     top: 370px;
+    z-index: 1;
 
     font-family: Roboto;
     font-style: normal;
@@ -876,12 +867,30 @@ body {
     width: 664px;
     height: 150px;
     left: 1159px;
-    top: 516px;
+    top: 550px;
 
     background: #FFFFFF;
     border: 3px solid #000000;
     box-sizing: border-box;
     border-radius: 25px;
+    transition: all 0.2s ease-in 0s;
+}
+
+.variant21:focus {
+    position: absolute;
+    width: 664px;
+    height: 150px;
+    left: 1159px;
+    top: 550px;
+
+    background: rgba(0, 71, 255, 0.06);
+    border: 9px solid #0065DC;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.variant21:hover {
+    cursor: pointer;
 }
 
 .variant21Text {
@@ -889,7 +898,8 @@ body {
     width: 596px;
     height: 106px;
     left: 1193px;
-    top: 539px;
+    top: 535px;
+    z-index: 1;
 
     font-family: Roboto;
     font-style: normal;
@@ -905,11 +915,13 @@ body {
     width: 1021px;
     height: 565px;
     left: 80px;
-    top: 273px;
+    top: 320px;
+    z-index: 2;
 
-    background: #654DFF;
+    background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    transition: all 0.2s ease-in 0s;
 }
 
 .closedConspect {
@@ -917,12 +929,46 @@ body {
     width: 1025px;
     height: 67px;
     left: 76px;
-    top: 863px;
+    top: 910px;
 
     background: #FFFFFF;
     border: 3px solid #999999;
     box-sizing: border-box;
     border-radius: 20px;
+    transition: all 0.2s ease-in 0s;
+}
+
+.closedConspect:focus {
+    position: absolute;
+    width: 1021px;
+    height: 565px;
+    left: 80px;
+    top: 410px;
+    z-index: 2;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 0;
+}
+
+.closedConspect:focus + .extendedVideo {
+    position: absolute;
+    width: 1025px;
+    height: 67px;
+    left: 76px;
+    top: 320px;
+    z-index: 0;
+
+    background: #FFFFFF;
+    border: 3px solid #999999;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+.closedConspect:focus + .extendedVideo > .youtubeLesson {
+    visibility: hidden;
 }
 
 .conspectText {
@@ -930,23 +976,30 @@ body {
     width: 969.2px;
     height: 593px;
     left: 105.9px;
-    top: 381px;
+    top: 400px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 35px;
+    visibility: hidden;
+    transition: all 0.2s ease-out 0s;
 
     color: #050505;
 }
 
+.closedConspect:focus ~ .conspectText {
+    visibility: visible;
+    z-index: 3;
+}
+
 .gray2 {
     position: absolute;
-    width: 271px;
     height: 36px;
     left: 102px;
-    top: 880px;
+    top: 897px;
+    z-index: 1;
 
     font-family: Roboto;
     font-style: normal;
@@ -959,10 +1012,10 @@ body {
 
 .gray3 {
     position: absolute;
-    width: 378px;
     height: 36px;
     left: 106px;
-    top: 288px;
+    top: 305px;
+    z-index: 1;
 
     font-family: Roboto;
     font-style: normal;
@@ -1002,4 +1055,111 @@ body {
 
     background: #C4C4C4;
     border: 9px solid #FFFFFF;
+}
+
+.arrowLeft {
+    position: absolute;
+    width: 53.5px;
+    height: 85.37px;
+    left: 26.75px;
+    top: 524.08px;
+}
+
+.arrowLeft:hover {
+    cursor: pointer;
+}
+
+.arrowRight {
+    position: absolute;
+    width: 53.5px;
+    height: 85.37px;
+    left: 1952.25px;
+    top: 524.08px;
+}
+
+.arrowRight:hover {
+    cursor: pointer;
+}
+
+.second {
+    margin-left: calc(136px + 60px + 369.09px);
+
+}
+
+.third {
+    margin-left: calc(136px + 60px + 369.09px + 60px + 369.09px);
+}
+
+.fourth {
+    margin-left: calc(136px + 60px + 369.09px + 60px + 369.09px + 60px + 369.09px);
+}
+
+.firstT {
+    top: calc(280px + 420px);
+}
+
+.firstN {
+    top: calc(364px + 420px);
+}
+
+.firstR {
+    top: calc(524.08px + 420px);
+}
+
+.firstC {
+    top: calc(393px + 420px);
+}
+
+.pic {
+    width: 45px;
+    height: width;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 7%;
+}
+
+.tick {
+    margin-left: 20px;
+}
+
+.cross {
+    margin-top: 35%;
+    margin-left: 20px;
+}
+
+.firstB {
+    top: 600px;
+}
+
+.subPart1 {
+    position: absolute;
+    width: 1010px;
+    height: 53px;
+    left: 230px;
+    top: 610px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 47px;
+
+    color: #999999;
+}
+
+.firstCN {
+    left: 1141px;
+    width: 0;
+}
+
+.ButtonNextArrow {
+    margin-top: 16%;
+    margin-left: 22%;
+}
+
+.youtubeLesson {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
 }

@@ -2,18 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}jedLine{% endblock %}</title>
     <link href="{% static 'base.css' %}" rel="stylesheet">
 </head>
 <body>
 
-<div class="header">
-    <img src="templates/imgs/logotype.svg" alt="" class="logo">
-    <p class="name">Дамир</p>
-    <div class="avatar">
-        <img src="templates/imgs/avaPic.jpg" alt="">
-    </div>
-</div>
+
 
 <div id="content">
     {% block content %}

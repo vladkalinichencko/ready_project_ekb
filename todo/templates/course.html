@@ -1,28 +1,38 @@
 {% extends "base.html" %}
-{% block title %}Log-in{% endblock %}
+{% block title %}Математика 3 класс, тесты. Тесты{% endblock %}
 {% block content %}
+{% load static %}
+<div class="header">
+    <a href="http://127.0.0.1:8000/home"><img src="{% static 'imgs/logotype.png' %}" alt="" class="logo"></a>
+    <p class="name">Дамир</p>
+    <img class="avatar" src="{% static 'imgs/pic.jpeg' %}" alt="">
+</div>
+    <a href="{% url 'course' %}" class="backArrow"><img src="{% static 'imgs/backArrow.svg' %}" alt=""></a>
 
-    <p class="courseName">Дискретная математика для программистов</p>
+    <p class="courseName">Математика</p>
 
     <p class="part1">Блок 1</p>
 
     <div class="lesson1">
-        <div class="lessonName"><p class="lessonNameText"></p></div>
-        <div class="testCount"><p class="testCountText"></p></div>
-        <div class="rating"><img src="templates/imgs/star.svg" alt=""><img src="templates/imgs/star.svg" alt=""><img src="templates/imgs/star.svg" alt=""></div>
-        <div class="completed"><img src="templates/imgs/tick.svg" alt=""></div>
+        <div class="lessonName"><p class="lessonNameText"> Умножение </p></div>
+        <div class="testCount"><p class="testCountText">5/5</p></div>
+        <div class="rating"><img class="pic" src="{% static 'imgs/star.svg' %}" alt=""><img class="pic" src="{% static 'imgs/star.svg' %}" alt=""><img class="pic" src="{% static 'imgs/star.svg' %}" alt=""></div>
+        <div class="completed"><img class="pic tick" src="{% static 'imgs/tick.svg' %}" alt=""></div>
     </div>
 
     <div class="lesson2">
-        <div class="lessonName2"><p class="lessonNameText2"></p></div>
-        <div class="testCount2"><p class="testCountText2"></p></div>
-        <div class="rating2"><img src="templates/imgs/star.svg" alt=""></div>
-        <div class="completed2"><img src="templates/imgs/cross.svg" alt=""></div>
+        <div class="lessonName2"><p class="lessonNameText2"> Деление </p></div>
+        <div class="testCount2"><p class="testCountText2">3/5</p></div>
+        <div class="rating2"><img class="pic" src="{% static 'imgs/star.svg' %}" alt=""><img class="pic" src="{% static 'imgs/star.svg' %}" alt=""></div>
+        <div class="completed2"><img class="pic cross" src="{% static 'imgs/progress.svg' %}" alt=""></div>
     </div>
+
+    <p class="part1 firstB">Блок 2 </p>
+    <p class="subPart1">будет доступен после прохождения блока 1</p>
 
     <p class="row1">Пройдено тестов: <br> Осталось времени: <br> Средний балл: </p>
 
-    <p class="row2">20/200 <br> 360 ч <br> 4.5 </p>
+    <p class="row2">2/20 <br> 8 ч <br> 4.7 </p>
 
     <a href="{% url 'lesson' %}" class="continueHref">
         <div class="continueButton"><p class="continueButtonText">Продолжить</p></div>

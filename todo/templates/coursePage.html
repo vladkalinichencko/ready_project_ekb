@@ -1,35 +1,42 @@
 {% extends "base.html" %}
-{% block title %}Log-in{% endblock %}
+{% block title %}Математика. Блок 1. Вопрос 4{% endblock %}
 {% block content %}
+{% load static %}
+<div class="header">
+    <a href="http://127.0.0.1:8000/home"><img src="{% static 'imgs/logotype.png' %}" alt="" class="logo"></a>
+    <p class="name">Дамир</p>
+    <img class="avatar" src="{% static 'imgs/pic.jpeg' %}" alt="">
+</div>
+    <a href="{% url 'course' %}" class="backArrow"><img src="{% static 'imgs/backArrow.svg' %}" alt=""></a>
 
-    <a href="templates/course.html" class="backArrow"><img src="static/imgs/backArrow.svg" alt=""></a>
+    <p class="courseName">Урок 2</p>
 
-    <p class="lessonNamePage">Урок 2</p>
+    <p class="courseName firstCN">Вопросы</p>
 
-    <p class="questionText">Вопросы</p>
+    <p class="question1">4. Сколько будет 25 * 35?</p>
 
-    <p class="question1">1. Что такое диаграмма Венна?</p>
+    <p class="variant11Text">155</p>
+    <div class="variant11" tabindex="3"></div>
 
-    <div class="variant11"></div>
-    <p class="variant11Text"></p>
+    <p class="variant21Text">875</p>
+    <div class="variant21" tabindex="4"></div>
 
-    <div class="variant21"></div>
-    <p class="variant21Text"></p>
-
-    <div class="extendedVideo" tabindex="1">
-        <!--вставить видео-->
-    </div>
+    <p class="gray3" tabindex="4">Показать видео</p>
 
     <div class="closedConspect" tabindex="2"></div>
-    <p class="conspectText">Ну здесь собственно конспект. Писать я его, конечно же, не буду</p>
+
+    <div class="extendedVideo" tabindex="1">
+        <iframe class="youtubeLesson" src="https://www.youtube.com/embed/aY-iDW0Lggs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <p class="conspectText" tabindex="5">Ну здесь собственно конспект. Писать я его, конечно же, не буду</p>
 
     <p class="gray2" tabindex="3">Показать конспект</p>
-    <p class="gray3" tabindex="4">Показать видео</p>
 
     <img src="templates/imgs/nextArrow.svg" alt="">
 
-    <a href="{% url 'lesson' %}" class="goButton">
-        <div class="goButtonPlane"><img class="ButtonArrow" src="static/imgs/nextArrow.svg" alt=""></div>
+    <a href="{% url 'home' %}" class="goButton">
+        <div class="goButtonPlane"><img class="ButtonNextArrow" src="{% static 'imgs/nextArrow.svg' %}" alt=""></div>
     </a>
 
 {% endblock %}

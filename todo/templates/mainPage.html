@@ -1,28 +1,60 @@
 {% extends "base.html" %}
-{% block title %}Log-in{% endblock %}
+{% block title %}jedLine - образовательная платформа для детей с ограниченными возможностями{% endblock %}
 {% block content %}
 {% load static %}
-
+<div class="header">
+    <img src="{% static 'imgs/logotype.png' %}" alt="" class="logo">
+    <p class="name">Дамир</p>
+    <img class="avatar" src="{% static 'imgs/pic.jpeg' %}" alt="">
+</div>
     <p class="greeting">Здравствуй, Дамир!</p>
 
     <p class="recommendationTitle">Курсы, рекомендованные тебе</p>
 
-    <div class="leftNav">
-        <img src="{% static '/imgs/leftArrow.svg' %}" alt="">
-    </div>
+    <div class="leftNav"></div>
+    <img class="arrowLeft" src="{% static '/imgs/leftArrow.svg' %}" alt="">
 
+    <a href="{% url 'overview' %}">
     <div class="coursePreview">
-        <div class="imgContainer">
-            <img src="templates/imgs/1course.jpg" alt="">
-        </div>
+        <img class="imgContainer" src="{% static '/imgs/course1.png' %}" alt="">
 
-        <p class="courseTitle">Дискретная математика для программистов</p>
+        <p class="courseTitle">Математика, 3 класс</p>
+    </div>
+    </a>
+
+    <div class="coursePreview second">
+        <img class="imgContainer" src="{% static '/imgs/course2.png' %}" alt="">
+
+        <p class="courseTitle">Биология, 5 класс</p>
     </div>
 
-    <div class="rightNav">
-        <img src="templates/imgs/rightArrow.svg" alt="">
+    <div class="coursePreview third">
+        <img class="imgContainer" src="{% static '/imgs/course3.png' %}" alt="">
+
+        <p class="courseTitle">Английский язык, 2 класс</p>
     </div>
 
-    <input type="button" class="applyButton" value="Поступить">
+    <div class="coursePreview fourth">
+        <img class="imgContainer" src="{% static '/imgs/course4.png' %}" alt="">
+
+        <p class="courseTitle">Информатика, 6 класс</p>
+    </div>
+
+    <div class="rightNav"></div>
+    <img class="arrowRight" src="{% static '/imgs/rightArrow.svg' %}" alt="">
+
+    <p class="recommendationTitle firstT">Незавершённые курсы</p>
+
+    <div class="leftNav firstN"></div>
+    <img class="arrowLeft firstR" src="{% static '/imgs/leftArrow.svg' %}" alt="">
+
+    <div class="coursePreview firstC">
+        <img class="imgContainer" src="{% static '/imgs/course5.png' %}" alt="">
+
+        <p class="courseTitle">Русский язык, 2 класс</p>
+    </div>
+
+    <div class="rightNav firstN"></div>
+    <img class="arrowRight firstR" src="{% static '/imgs/rightArrow.svg' %}" alt="">
 
 {% endblock %}
